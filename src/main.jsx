@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import MainLayout from "./Layouts/MainLayout";
 import ListedBooks from "./Pages/ListedBooks";
 import PagesToRead from "./Pages/PagesToRead";
+import BookDetails from "./Components/BookDetails";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/pagestoread",
         element: <PagesToRead />,
+      },
+      {
+        path: "/details",
+        element: <BookDetails />,
       },
     ],
   },

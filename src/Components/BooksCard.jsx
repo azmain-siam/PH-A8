@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import starIcon from "../assets/Vector.svg";
 
 const BooksCard = ({ book }) => {
@@ -5,7 +7,7 @@ const BooksCard = ({ book }) => {
   const { rating, category, tags, image, bookName, author } = book;
 
   return (
-    <div>
+    <Link to={"/details"}>
       <div className="card p-6 border h-full border-[#28282833] work-sans cursor-pointer hover:border-[#23BE0A] hover:scale-[1.03] transition-all duration-200 hover:bg-[#22be0a05]">
         <figure className="h-[220px]">
           <img
@@ -41,7 +43,7 @@ const BooksCard = ({ book }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
