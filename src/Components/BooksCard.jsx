@@ -4,10 +4,10 @@ import starIcon from "../assets/Vector.svg";
 
 const BooksCard = ({ book }) => {
   console.log(book);
-  const { rating, category, tags, image, bookName, author } = book;
+  const { rating, category, tags, image, bookName, author, bookId } = book;
 
   return (
-    <Link to={"/details"}>
+    <Link to={`/details/${bookId}`}>
       <div className="card p-6 border h-full border-[#28282833] work-sans cursor-pointer hover:border-[#23BE0A] hover:scale-[1.03] transition-all duration-200 hover:bg-[#22be0a05]">
         <figure className="h-[220px]">
           <img
