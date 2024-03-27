@@ -29,7 +29,7 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ReadBooks></ReadBooks>,
-            loader: () => fetch("../public/Data.json"),
+            loader: () => fetch("../Data.json"),
           },
           {
             path: "wishlist",
@@ -40,6 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/pagestoread",
         element: <PagesToRead />,
+        loader: () => fetch("../Data.json"),
       },
       {
         path: "/details/:bookId",

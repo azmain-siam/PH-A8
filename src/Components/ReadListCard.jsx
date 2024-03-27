@@ -1,18 +1,19 @@
 import { IoLocationOutline, IoPeopleOutline } from "react-icons/io5";
 import { FaRegFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ReadListCard = ({ book }) => {
   const {
     bookName,
     author,
     image,
-    review,
     totalPages,
     rating,
     category,
     tags,
     publisher,
     yearOfPublishing,
+    bookId
   } = book;
   return (
     <div className="card flex flex-row p-6 border h-full border-[#28282833] work-sans cursor-pointer hover:border-[#23BE0A]  transition-all duration-200 mb-5 ">
@@ -65,9 +66,11 @@ const ReadListCard = ({ book }) => {
           <span className="px-5 py-3 bg-[#FFAC3326] text-[#FFAC33] font-medium rounded-full">
             Rating: {rating}
           </span>
-          <button className="px-5 py-3 bg-[#23BE0A] text-white font-medium rounded-full">
-            Show Details
-          </button>
+          <Link to={`/details/${bookId}`}>
+            <button className="px-5 py-3 bg-[#23BE0A] text-white font-medium rounded-full">
+              Show Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>

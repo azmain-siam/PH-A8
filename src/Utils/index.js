@@ -20,3 +20,26 @@ export const saveBook = (book) => {
     toast.success("Book Added Successfully");
   }
 };
+
+export const getWishlist = () => {
+  let wishlist = [];
+  const storedBooks = localStorage.getItem("wishlist");
+  if (storedBooks) {
+    wishlist = JSON.parse(storedBooks);
+  }
+  return wishlist;
+};
+
+export const saveWishlist = (book) => {
+  let books = getBooks();
+  let wishlist = getWishlist();
+  const isExists = books.find((b) => b.bookId === book.bookId);
+  const isAddedWishlist = wishlist.find((w) => w.bookId === book.bookId);
+  if (isExists || isAddedWishlist) {
+    return toast.error("Already Added");
+  } else {
+    wishlist.push(book);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    toast.success("Book Added to Wishlist Successfully");
+  }
+};
