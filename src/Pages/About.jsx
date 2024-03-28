@@ -4,6 +4,7 @@ import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import profile1 from "../assets/pic (1).jpg";
 import profile2 from "../assets/pic (2).jpg";
 import profile3 from "../assets/pic (3).jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -116,7 +117,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <button className="btn">Contact us</button>
+      <hr className="mb-5" />
+      <p className="font-semibold text-lg md:text-xl mb-10">
+        Have any query?{" "}
+        <Link className="italic underline" to={"/contact"}>
+          Contact Us
+        </Link>
+      </p>
     </div>
   );
 };

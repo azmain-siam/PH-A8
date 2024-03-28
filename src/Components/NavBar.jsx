@@ -33,6 +33,8 @@ const NavBar = () => {
               <Link to={"/"}>Home</Link>
               <Link to={"/listedbooks"}>Listed Books</Link>
               <Link to={"/pagestoread"}>Pages to Read</Link>
+              <Link to={"/about"}>About Us</Link>
+              <Link to={"/contact"}>Contact Us</Link>
             </ul>
           </div>
           <Link
