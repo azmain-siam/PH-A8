@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="poppins text-center mt-3">
-      {" "}
-      <h1>h</h1>
       <div
         className="hero h-[420px] md:h-[350px] rounded-2xl"
         style={{
