@@ -3,7 +3,7 @@ import banner_photo from "../assets/Banner-book.png";
 
 const Banner = () => {
   return (
-    <div className="hero bg-[#1313130D] p-8 lg:p-20">
+    <div className="hero bg-[#1313130D] p-8 lg:p-20 rounded-3xl">
       <div className="hero-content flex-col gap-7 lg:gap-0 lg:flex-row-reverse justify-between w-full">
         <img src={banner_photo} />
         <div className="md:space-y-12 space-y-7 text-center md:text-left">

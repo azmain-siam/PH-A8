@@ -14,7 +14,7 @@ const Contact = () => {
               <div className="space-y-2 w-full">
                 <label className="text-[#23BE0A] font-medium" htmlFor="name">
                   Name
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="input input-bordered w-full"
@@ -27,7 +27,7 @@ const Contact = () => {
               <div className="space-y-2 w-full">
                 <label className="text-[#23BE0A] font-medium" htmlFor="phone">
                   Phone
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="input input-bordered w-full"

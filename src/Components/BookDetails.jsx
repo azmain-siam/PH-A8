@@ -29,7 +29,7 @@ const BookDetails = () => {
   // console.log(bookId, books);
 
   return (
-    <section className="flex flex-col md:flex-row gap-12 work-sans mt-3">
+    <section className="flex flex-col md:flex-row gap-12 work-sans mt-3 border px-4 md:border-none md:px-0 rounded-3xl">
       {/* Image Container */}
       <div className="min-w-[45%] h-[350px] md:h-[520px]  rounded-2xl flex justify-center mt-8 ">
         <img className="h-full object-cover" src={image} alt="" />
@@ -44,7 +44,7 @@ const BookDetails = () => {
         <hr className="my-4" />
         <p className="font-medium text-[#131313CC] md:text-xl">{category}</p>
         <hr className="my-4" />
-        <p className="text-[#131313] font-bold mb-14">
+        <p className="text-[#131313] font-bold mb-5 md:mb-14">
           Review:{" "}
           <span className="text-[#131313CC]  font-normal">{review}</span>
         </p>

@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { getBooks } from "../Utils";
 import ReadListCard from "./ReadListCard";
 
-const ReadBooks = () => {
+const ReadBooks = ({ data }) => {
   const [books, setBooks] = useState([]);
+  console.log(data);
+
+  console.log(books);
   useEffect(() => {
     const storedBooks = getBooks();
     setBooks(storedBooks);

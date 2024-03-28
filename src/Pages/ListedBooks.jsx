@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -14,7 +14,7 @@ const ListedBooks = () => {
           <option disabled selected>
             Sort By
           </option>
-          <option className="bg-green">Rating</option>
+          <option>Rating</option>
           <option>Number of pages</option>
           <option>Published year</option>
         </select>
