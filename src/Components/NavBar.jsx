@@ -74,6 +74,26 @@ const NavBar = () => {
             >
               Pages to Read
             </NavLink>
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) =>
+                isActive
+                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white duration-200 px-5 py-3"
+                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3 duration-100"
+              }
+            >
+              About Us
+            </NavLink>
+            <NavLink
+              to={"/contact"}
+              className={({ isActive }) =>
+                isActive
+                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white duration-200 px-5 py-3"
+                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3 duration-100"
+              }
+            >
+              Contact Us
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end gap-2 md:gap-4">
