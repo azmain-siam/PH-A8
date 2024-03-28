@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="poppins text-center mt-3">
+      {" "}
+      <h1>h</h1>
       <div
         className="hero h-[420px] md:h-[350px] rounded-2xl"
         style={{
@@ -33,7 +35,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
       <div className="mt-10 md:mt-14">
         <h2 className="text-2xl md:text-4xl font-semibold mb-4">
           Meet the Team
