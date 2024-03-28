@@ -10,11 +10,13 @@ import BookDetails from "./Components/BookDetails";
 import ReadBooks from "./Components/ReadBooks";
 import Wishlist from "./Components/Wishlist";
 import { Toaster } from "react-hot-toast";
+// import Error from "./Pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    // errorElement: <Error></Error>,
 
     children: [
       {

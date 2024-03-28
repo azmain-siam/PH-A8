@@ -6,10 +6,10 @@ const ListedBooks = () => {
 
   return (
     <div className="work-sans">
-      <div className="bg-[#1313130D] flex justify-center py-8 rounded-2xl text-3xl font-bold">
+      <div className="bg-[#1313130D] flex justify-center py-5 md:py-8 rounded-2xl text-2xl md:text-3xl font-bold">
         <h3>Books</h3>
       </div>
-      <div className="flex w-full justify-center mt-6">
+      <div className="flex w-full justify-center my-6">
         <select className="select select-bordered w-[200px] text-base max-w-xs">
           <option disabled selected>
             Sort By
@@ -21,7 +21,7 @@ const ListedBooks = () => {
       </div>
 
       {/* ----------------Tabs---------------- */}
-      <div className="flex items-center  overflow-x-auto overflow-y-hidden w-full text-lg mb-4 border-b">
+      <div className="flex items-center  overflow-x-auto overflow-y-hidden w-full md:text-lg mb-4 border-b">
         <Link
           onClick={() => setTabIndex(0)}
           to={""}
@@ -41,7 +41,7 @@ const ListedBooks = () => {
           <span>Wishlist Books</span>
         </Link>
       </div>
-      
+
       <Outlet />
     </div>
   );

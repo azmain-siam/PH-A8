@@ -29,35 +29,37 @@ const BookDetails = () => {
   // console.log(bookId, books);
 
   return (
-    <section className="flex gap-12 work-sans mt-3">
+    <section className="flex flex-col md:flex-row gap-12 work-sans mt-3">
       {/* Image Container */}
-      <div className="min-w-[45%] h-[520px]  rounded-2xl flex justify-center mt-8 ">
+      <div className="min-w-[45%] h-[350px] md:h-[520px]  rounded-2xl flex justify-center mt-8 ">
         <img className="h-full object-cover" src={image} alt="" />
       </div>
 
       {/* Details Container */}
       <div className="pb-10">
-        <h3 className="playfair text-5xl font-bold text-[#131313] mb-4">
+        <h3 className="playfair text-3xl md:text-5xl font-bold text-[#131313] mb-4">
           {bookName}
         </h3>
-        <p className="font-medium text-[#131313CC] text-xl">By: {author}</p>
+        <p className="font-medium text-[#131313CC] md:text-xl">By: {author}</p>
         <hr className="my-4" />
-        <p className="font-medium text-[#131313CC] text-xl">{category}</p>
+        <p className="font-medium text-[#131313CC] md:text-xl">{category}</p>
         <hr className="my-4" />
         <p className="text-[#131313] font-bold mb-14">
           Review:{" "}
           <span className="text-[#131313CC]  font-normal">{review}</span>
         </p>
-        <h4 className="text-[#131313] font-bold mb-5 flex gap-3 items-center">
+        <h4 className="text-[#131313] font-bold mb-5 flex gap-5 items-center">
           Tags:
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="px-3 py-2 bg-[#23BE0A0D] text-[#23BE0A] font-medium"
-            >
-              {tag}
-            </span>
-          ))}
+          <div className="flex gap-3 flex-wrap">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-2 bg-[#23BE0A0D] text-[#23BE0A] text-sm md:text-base font-medium"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </h4>
         <hr className="my-4" />
         <div className="flex gap-6 mb-8">
@@ -77,13 +79,13 @@ const BookDetails = () => {
         <div className="flex gap-2 md:gap-4 mb-6">
           <button
             onClick={() => handleAddRead(book)}
-            className="bg-white hover:bg-[#7cdb6e] border-2 duration-300 text-sm lg:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg"
+            className="bg-white hover:bg-[#7cdb6e] border-2 duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg w-full md:w-auto"
           >
             Read
           </button>
           <button
             onClick={() => handleAddWishlist(book)}
-            className="bg-[#59C6D2] hover:bg-[#86dae4]  duration-300 text-sm lg:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white"
+            className="bg-[#59C6D2] hover:bg-[#86dae4] duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white w-full md:w-auto"
           >
             Wishlist
           </button>
