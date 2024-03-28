@@ -71,7 +71,7 @@ const ReadListCard = ({ book }) => {
             </span>
           </div>
           <Link to={`/details/${bookId}`}>
-            <button className="px-4 py-3 bg-[#23BE0A] text-white font-medium rounded-full w-full md:w-auto">
+            <button className="px-4 py-3 bg-[#23BE0A] text-white hover:bg-white border border-[#23BE0A] hover:text-black duration-200 hover:scale-105 font-medium rounded-full w-full md:w-auto">
               Show Details
             </button>
           </Link>

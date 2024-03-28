@@ -13,11 +13,11 @@ export const saveBook = (book) => {
   let books = getBooks();
   const isExists = books.find((b) => b.bookId === book.bookId);
   if (isExists) {
-    return toast.error("Already Added");
+    return toast.error("Already Added to Readlist");
   } else {
     books.push(book);
     localStorage.setItem("books", JSON.stringify(books));
-    toast.success("Book Added Successfully");
+    toast.success("Successfully Added to Readlist");
   }
 };
 
@@ -36,10 +36,10 @@ export const saveWishlist = (book) => {
   const isExists = books.find((b) => b.bookId === book.bookId);
   const isAddedWishlist = wishlist.find((w) => w.bookId === book.bookId);
   if (isExists || isAddedWishlist) {
-    return toast.error("Already Added");
+    return toast.error("Already Added to Readlist");
   } else {
     wishlist.push(book);
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
-    toast.success("Book Added to Wishlist Successfully");
+    toast.success("Successfully Added to Wishlist");
   }
 };

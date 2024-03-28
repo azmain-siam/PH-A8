@@ -48,8 +48,8 @@ const NavBar = () => {
               to={"/"}
               className={({ isActive }) =>
                 isActive
-                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:text-[#23BE0A] px-5 py-3"
-                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3"
+                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white duration-200 px-5 py-3"
+                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3 duration-100"
               }
             >
               Home
@@ -58,8 +58,8 @@ const NavBar = () => {
               to={"/listedbooks"}
               className={({ isActive }) =>
                 isActive
-                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:text-[#23BE0A] px-5 py-3"
-                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3"
+                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white duration-200 px-5 py-3"
+                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3 duration-100"
               }
             >
               Listed Books
@@ -68,8 +68,8 @@ const NavBar = () => {
               to={"/pagestoread"}
               className={({ isActive }) =>
                 isActive
-                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:text-[#23BE0A] px-5 py-3"
-                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3"
+                  ? "border border-[#23BE0A] font-semibold text-[#23BE0A] rounded-lg hover:bg-[#23BE0A] hover:text-white duration-200 px-5 py-3"
+                  : "rounded-lg hover:text-[#23BE0A] px-5 py-3 duration-100"
               }
             >
               Pages to Read
@@ -77,10 +77,10 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-2 md:gap-4">
-          <button className="bg-[#23BE0A] hover:bg-[#7cdb6e] text-sm lg:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white">
+          <button className="bg-[#23BE0A] border border-[#23BE0A] hover:bg-white duration-300 text-sm lg:text-lg font-semibold px-3 lg:px-5 py-3 lg:py-3 rounded-lg text-white hover:text-black">
             Sign In
           </button>
-          <button className="bg-[#59C6D2] hover:bg-[#86dae4] text-sm lg:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white">
+          <button className="bg-[#59C6D2] border border-[#59C6D2] hover:bg-white duration-300 text-sm lg:text-lg font-semibold px-3 lg:px-5 py-3 lg:py-3 rounded-lg text-white hover:text-black">
             Sign Up
           </button>
         </div>

@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("Data.json"),
+        loader: () => fetch("/Data.json"),
       },
       {
         path: "/listedbooks",
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ReadBooks></ReadBooks>,
-            loader: () => fetch("../Data.json"),
+            loader: () => fetch("/Data.json"),
           },
           {
             path: "wishlist",
@@ -42,12 +42,12 @@ const router = createBrowserRouter([
       {
         path: "/pagestoread",
         element: <PagesToRead />,
-        loader: () => fetch("../Data.json"),
+        loader: () => fetch("/Data.json"),
       },
       {
         path: "/details/:bookId",
         element: <BookDetails />,
-        loader: () => fetch("../Data.json"),
+        loader: () => fetch("/Data.json"),
       },
     ],
   },

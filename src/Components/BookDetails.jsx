@@ -79,13 +79,13 @@ const BookDetails = () => {
         <div className="flex gap-2 md:gap-4 mb-6">
           <button
             onClick={() => handleAddRead(book)}
-            className="bg-white hover:bg-[#7cdb6e] border-2 duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg w-full md:w-auto"
+            className="bg-white hover:bg-[#23BE0A] border border-[#23BE0A] hover:text-white duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg w-full md:w-auto"
           >
             Read
           </button>
           <button
             onClick={() => handleAddWishlist(book)}
-            className="bg-[#59C6D2] hover:bg-[#86dae4] duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white w-full md:w-auto"
+            className="bg-[#59C6D2] hover:bg-white border border-[#59C6D2] hover:text-black duration-300 md:text-lg font-semibold px-4 lg:px-5 py-3 lg:py-3 rounded-lg text-white w-full md:w-auto"
           >
             Wishlist
           </button>
